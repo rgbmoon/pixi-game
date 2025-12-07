@@ -40,7 +40,7 @@ module.exports = {
     '@typescript-eslint/prefer-ts-expect-error': 'error',
 
     // Import
-    'import/no-unresolved': ['error', { ignore: ['^@/'] }],
+    'import/no-unresolved': ['error', { ignore: ['^@/', '^/'] }],
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'import/no-duplicates': 'error',
     'import/no-named-as-default-member': 'error',
@@ -87,15 +87,15 @@ module.exports = {
     react: { version: 'detect' },
     'import/resolver': {
       node: {
-        extensions: ['.ts', '.tsx'],
-        moduleDirectory: ['node_modules', 'src/'],
+        extensions: ['.ts', '.tsx', '.svg'],
+        moduleDirectory: ['node_modules', 'src/', 'public/'],
       },
       typescript: {
         alwaysTryTypes: true,
       },
       alias: {
         map: [['@', './src']],
-        extensions: ['.ts', '.tsx'],
+        extensions: ['.ts', '.tsx', '.svg'],
       },
     },
   },
