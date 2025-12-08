@@ -11,11 +11,12 @@ export const Layout = () => {
         className="items-center justify-between shrink-0 sticky top-0 flex gap-4 w-full p-3"
         style={{ background: `url("${headerBg}") repeat-x center/auto 100%` }}
       >
-        <a href="/">
+        <a className="flex items-center gap-2" href="/">
           <LogoIcon width={40} height={40} />
+          <h1 className="text-4xl font-extralight">Pixi Game</h1>
         </a>
         <Button link href="/game">
-          Game
+          Play
         </Button>
       </header>
       <main className="flex-1 w-full overflow-auto">
