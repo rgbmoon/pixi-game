@@ -1,13 +1,13 @@
 import { StrictMode } from 'react'
 
-import { Canvas } from '../components/Canvas'
+import { RouterProvider } from 'react-router-dom'
+
+import { router } from './router'
 
 export const App = () => {
   return (
     <StrictMode>
-      <div className="flex items-center justify-center w-screen h-screen">
-        <Canvas />
-      </div>
+      <RouterProvider router={router} />
     </StrictMode>
   )
 }

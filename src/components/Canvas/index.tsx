@@ -1,4 +1,4 @@
-import { rootStore } from '../../stores/root'
+import { rootStore } from 'src/stores/root'
 
 export const Canvas = () => {
   return (
