@@ -2,8 +2,6 @@ import { Outlet } from 'react-router-dom'
 import { LogoIcon } from 'src/assets/icons'
 import headerBg from 'src/assets/icons/header-bg.svg?url'
 
-import { Button } from '../Button'
-
 export const Layout = () => {
   return (
     <div className="flex relative flex-col items-center h-screen">
@@ -13,11 +11,8 @@ export const Layout = () => {
       >
         <a className="flex items-center gap-2" href="/">
           <LogoIcon width={40} height={40} />
-          <h1 className="text-4xl font-extralight">Pixi Game</h1>
+          <h1 className="text-3xl font-extralight">Pixi Game</h1>
         </a>
-        <Button link href="/game">
-          Play
-        </Button>
       </header>
       <main className="flex-1 w-full overflow-auto">
         <Outlet />

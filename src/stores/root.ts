@@ -16,7 +16,7 @@ export class RootStore {
     this.pixiApp = new Application()
 
     await this.pixiApp.init({
-      background: '#1099bb',
+      background: '#475569',
       resizeTo: container,
     })
 
