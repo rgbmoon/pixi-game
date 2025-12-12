@@ -1,12 +1,12 @@
-import mainPageBg from 'src/assets/icons/main-page-bg.svg?url'
+import { BackgroundCanvas } from 'src/components/BackgroundCanvas'
 import { Button } from 'src/components/Button'
 
 export const MainPage = () => {
   return (
-    <div
-      className="h-full flex flex-col items-center justify-center p-6 gap-20"
-      style={{ background: `url("${mainPageBg}") repeat-x center/auto 100%` }}
-    >
+    <div className="relative h-[calc(100vh-var(--header-height))] flex flex-col items-center justify-center p-6 gap-20">
+      <div className="absolute inset-0 -z-10">
+        <BackgroundCanvas />
+      </div>
       <div className="flex flex-col items-center gap-4">
         <h1 className="text-6xl text-center font-extralight">
           Добро пожаловать в <span className="text-[#a98fc3]">Pixi</span> <span className="text-[#6ec3a7]">Game</span>

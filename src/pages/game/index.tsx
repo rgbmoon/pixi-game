@@ -1,5 +1,5 @@
-import { Canvas } from 'src/components/Canvas'
+import { GameCanvas } from 'src/components/GameCanvas'
 
 export const GamePage = () => {
-  return <Canvas />
+  return <GameCanvas />
 }

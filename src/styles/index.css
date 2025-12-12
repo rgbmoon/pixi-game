@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+  --header-height: 64px;
+}
+
 html,
 body {
   background-color: var(--color-slate-600);

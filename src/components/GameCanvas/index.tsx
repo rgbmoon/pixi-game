@@ -1,6 +1,6 @@
 import { rootStore } from 'src/stores/root'
 
-export const Canvas = () => {
+export const GameCanvas = () => {
   return (
     <div
       ref={(element: HTMLDivElement | null) => {
